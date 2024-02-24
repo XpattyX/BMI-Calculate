@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
         <title>เครื่องคำนวณหาค่าดัชนีมวลกาย (BMI)</title>
     </head>
-    <body>
+    <body>      
         <h1>เครื่องคำนวณหาค่าดัชนีมวลกาย (BMI)</h1>
     <main class="layout">
         <div class="quote">
@@ -18,17 +18,17 @@
 
             <div class="input">
                 <h3>น้ำหนักตัว (kg.)</h3>
-                <input type="number" value="" id="weight">
+                <input type="number" id="weightData">
                 <h3>ส่วนสูง (cm.)</h3>
-                <input type="number" value="" id="height">
-                <input type="button" value="คำนวณ">
+                <input type="number" id="heightData">
+                <input type="button" onclick="Calculate()" value="คำนวณ">
             </div>
             
     </main>
     <main class="BMI">
         <div>
             <h2>BMI</h2>
-            <div class="result">0000000</div>
+            <div class="result" id="result"></div>
         </div>
     </main>
 
